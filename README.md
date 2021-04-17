@@ -5,7 +5,7 @@ A minimal working setup providing a devcontainer for vscode + python + jupyter n
 ## Sources / Prerequisites
 
 - [vscode](https://code.visualstudio.com/)
-- [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension for vscode
+- [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for vscode
 - [Docker + docker-compose](https://www.docker.com/get-started)
   - Image: [amalic/jupyterlab](https://hub.docker.com/r/amalic/jupyterlab)
   - Found in [this repository](https://github.com/amalic/Jupyterlab) by [@amalic](https://github.com/amalic)
