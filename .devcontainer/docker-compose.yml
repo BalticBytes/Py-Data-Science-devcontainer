@@ -1,0 +1,18 @@
+version: "3"
+
+# We use a docker-compose file, so that you can append other projects (disguised as services) easily!
+
+services:
+  vscode:
+    build: .
+    image: amalic/jupyterlab
+    volumes:
+      - ../:/workspaces
+      - ~/.ssh:/home/vscode/.ssh
+      - ~/.ssh:/root/.ssh
+      - ~/.gitconfig:/home/districter/.gitconfig
+      - ~/.gitconfig:/root/.gitconfig
+    environment:
+      - TZ=
+    # Override entrypoint, so that container stays open for vscode to attach to
+    entrypoint: zsh -c "while sleep 1000; do :; done"
